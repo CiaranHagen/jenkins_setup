@@ -3,7 +3,7 @@ FROM jenkins/jenkins:lts
 USER root
 
 RUN apt-get update && \
-    apt-get install -y maven git && \
+    apt-get install -y maven git cowsay && \
     apt-get clean
 
 USER jenkins
