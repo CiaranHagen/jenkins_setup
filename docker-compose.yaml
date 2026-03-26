@@ -10,7 +10,7 @@ services:
       - 8081:8080
 
     volumes:
-      - 'C:/Users/ZNG155/jenkins:/var/jenkins_home
+      - ./jenkins:/var/jenkins_home
       # - //./pipe/docker_engine:/var/run/docker.sock
       # - /var/run/docker.sock:/var/run/docker.sock
       # - /usr/local/bin/docker:/usr/local/bin/docker
