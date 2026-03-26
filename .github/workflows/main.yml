@@ -28,6 +28,7 @@ jobs:
           tags: zng155/jenkins:latest
   deploy:
     runs-on: ubuntu-latest
+    needs: image_build_push
     steps:
     - uses: actions/checkout@v2
     
