@@ -19,7 +19,7 @@ jobs:
         echo "$PRIVATE_KEY" > github-ec2.pem && chmod 600 github-ec2.pem
         ssh -o StrictHostKeyChecking=no -i github-ec2.pem ${USER}@${HOST} '
         cd ~/jenkins_setup
-        docker image pull zng155/jenkins:latest
-        docker compose down
-        docker compose up -d
+        sudo docker image pull zng155/jenkins:latest
+        sudo docker compose down
+        sudo docker compose up -d
         '
