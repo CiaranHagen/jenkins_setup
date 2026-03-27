@@ -17,9 +17,9 @@ RUN apt-get update && \
         gnupg \
         wget \
         ca-certificates \
-        libxml2-dev \
-        && \
-    apt-get clean
+        libxml2-dev 
+        
+RUN apt-get clean
 
 RUN R -e "install.packages('renv')"
 
